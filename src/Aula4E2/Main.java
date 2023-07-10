@@ -60,6 +60,7 @@ public class Main {
 		Book book = new Book(title, publishDate, price, authors, publishingCompany);
 		listing.getLibraryItems().addBook(book);
 		listing.addBook(book);
+		listing.updateBook(0, book);
 	}
 
 	public void constructNewMagazine(String title, String publishDate, double price, int editionNumber,

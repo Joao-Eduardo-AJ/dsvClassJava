@@ -1,4 +1,4 @@
-package Aula4E3;
+                          package Aula4E3;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,27 +6,27 @@ import java.util.List;
 public class Main {
 	private HamburgerShop hamburgerShop;
 	
-
 	public static void main(String[] args) {
+		SellMode sellMode = new SellMode();
 		Main main = new Main();
 		
 		main.run();
-		main.hamburgerShop.sellMode();
+		sellMode.runSellMode(main.hamburgerShop);
 	}
 	
 	public void run() {
 		Customer customer1 = new Customer("Carlos", "Av. das Flores, 123 - Bairro Felicidade, Cidade Feliz - SP",
-				"(11) 98765-4321");
+				"(11) 98765-4321", "c@gmail.com", "123123");
 		Customer customer2 = new Customer("Ana", "Rua da Praia, 456 - Bairro Oceano, Cidade Azul - SC",
-				"(47) 98765-4321");
+				"(47) 98765-4321", "a@gmail.com", "123123");
 		Customer customer3 = new Customer("Pedro", "Av. dos Bosques, 789 - Bairro Floresta, Cidade Verde - RJ",
-				"(21) 98765-4321");
+				"(21) 98765-4321", "p@gmail.com", "123123");
 		Customer customer4 = new Customer("Maria", "Rua das Montanhas, 1010 - Bairro Serra, Cidade Aventureira - MG",
-				"(31) 98765-4321");
+				"(31) 98765-4321", "m@gmail.com", "123123");
 		Customer customer5 = new Customer("Laura", "Av. do Sol, 222 - Bairro Verão, Cidade Quente - BA",
-				"(71) 98765-4321");
+				"(71) 98765-4321", "l@gmail.com", "123123");
 		Customer customer6 = new Customer("Gustavo", "Rua das Estrelas, 333 - Bairro Céu, Cidade Espacial - RS",
-				"(51) 98765-4321");
+				"(51) 98765-4321", "g@gmail.com", "123123");
 
 		List<Customer> customers = new ArrayList<>();
 		customers.add(customer1);
